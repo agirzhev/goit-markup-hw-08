@@ -1,17 +1,52 @@
 .company {
   padding-bottom: 0;
+
+  @media screen and (min-width: 320px) {
+    padding-top: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
 }
 
 .company-list {
-  display: flex;
-  text-align: left;
+  margin-left: -30px;
+  @media screen and (min-width: 320px) {
+    min-width: 290px;
+    min-height: 994px;
+  }
+  @media screen and (min-width: 480px) {
+    min-width: 450px;
+    min-height: 994px;
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 738px;
+    min-height: 507px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 1170px;
+    min-height: 251px;
+  }
 }
 
 .company-list__item {
-  width: 270px;
-  height: 251px;
-  &:not(:first-child) {
-    margin-left: 30px;
+  margin-left: 30px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 251px;
   }
 }
 
@@ -25,11 +60,19 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primery-text-color);
+
+  @media screen and (min-width: 320px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .company-list__text {
   margin: 0;
   padding: 0;
+  text-align: left;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -45,6 +88,19 @@
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--section-background-color);
+  @media screen and (min-width: 320px) {
+    min-width: 290px;
+  }
+  @media screen and (min-width: 480px) {
+    min-width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 270px;
+  }
 }
 
 .details__icon {
