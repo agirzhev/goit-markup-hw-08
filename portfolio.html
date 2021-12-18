@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header header-portfolio">
+      <div class="container">
+        <a href="./index.html" class="header__logo-web"
+          >Web<span class="header__logo">Studio</span></a
+        >
+        <nav class="site-nav">
+          <ul class="site-nav__list list">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link">Студия</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link site-nav__content">Портфолио</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="Контакты" class="site-nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- <div class="container"> -->
+        <ul class="header-list list">
+          <li class="header-list__item">
+            <a href="mailto:info@devstudio.com" class="header-list__link">
+              <svg class="header-list__email">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="header-list__item">
+            <a href="tel:+380961111111" class="header-list__link">
+              <svg class="header-list__phone">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- main contener -->
+    <main>
+      <!-- heading -->
+      <section class="portfolio section">
+        <div class="container">
+          <h1 class="visually-hidden">Портфолио</h1>
+          <ul class="filters-list list">
+            <li class="filters-list__item filters-list__item-fist">
+              <button class="filters-list__button" type="button">Все</button>
+            </li>
+            <li class="filters-list__item">
+              <button class="filters-list__button" type="button">Веб-сайты</button>
+            </li>
+            <li class="filters-list__item">
+              <button class="filters-list__button" type="button">Приложения</button>
+            </li>
+            <li class="filters-list__item">
+              <button class="filters-list__button" type="button">Дизайн</button>
+            </li>
+            <li class="filters-list__item">
+              <button class="filters-list__button" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="portfolio-list list">
+            <li class="portfolio-list__item">
+              <div class="portfolio-list__item-web">
+                <img
+                  class="portfolio-list__fofto"
+                  src="./images/portfolio-texno.jpg"
+                  alt="веб-сайт технокряк"
+                  width="370"
+                  height="294"
+                />
+                <p class="portfolio-list__item-overley">
+                  Технокряк это современная площадка распространения коронавируса. Компании
+                  используют эту платформу для цифрового шпионажа и атак на защищённые сервера
+                  конкурентов.
+                </p>
+              </div>
+              <h2 class="portfolio-list__title">Технокряк</h2>
+              <p class="portfolio-list__text">Веб-сайт</p>
+            </li>
+            <li class="portfolio-list__item">
+              <img
+                class="portfolio-list__fofto"
+                src="./images/portfolio-poster.jpg"
+                alt="дизайн постеров"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio-list__title">Постер New Orlean vs Golden Star</h2>
+              <p class="portfolio-list__text">Дизайн</p>
+            </li>
+            <li class="portfolio-list__item">
+              <img
+                class="portfolio-list__fofto"
+                src="./images/portfolio-sea-food.jpg"
+                alt="ресторан seafood"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio-list__title">Ресторан Seafood</h2>
+              <p class="portfolio-list__text">Приложение</p>
+            </li>
+            <li class="portfolio-list__item">
+              <img
+                class="portfolio-list__fofto"
+                src="./images/portfolio-prime.jpg"
+                alt="проект prime"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio-list__title">Проект Prime</h2>
+              <p class="portfolio-list__text">Маркетинг</p>
+            </li>
+            <li class="portfolio-list__item">
+              <img
+                class="portfolio-list__fofto"
+                src="./images/portfolio-boxes.jpg"
+                alt="проект boxes"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio-list__title">Проект Boxes</h2>
+              <p class="portfolio-list__text">Приложение</p>
+            </li>
+            <li class="portfolio-list__item">
+              <img
+                class="portfolio-list__fofto"
+                src="./images/portfolio-inspiration.jpg"
+                alt="веб-сайт inspiration"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio-list__title">Inspiration has no Borders</h2>
+              <p class="portfolio-list__text">Веб-сайт</p>
+            </li>
+            <li class="portfolio-list__item">
+              <img
+                class="portfolio-list__fofto"
+                src="./images/portfolio-edition.jpg"
+                alt="издание limited edition"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio-list__title">Издание Limited Edition</h2>
+              <p class="portfolio-list__text">Дизайн</p>
+            </li>
+            <li class="portfolio-list__item">
+              <img
+                class="portfolio-list__fofto"
+                src="./images/portfolio-lab.jpg"
+                alt="проект lab"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio-list__title">Проект LAB</h2>
+              <p class="portfolio-list__text">Маркетинг</p>
+            </li>
+            <li class="portfolio-list__item">
+              <img
+                class="portfolio-list__fofto"
+                src="./images/portfolio-growing.jpg"
+                alt="приложение growing business"
+                width="370"
+                height="294"
+              />
+              <h2 class="portfolio-list__title">Growing Business</h2>
+              <p class="portfolio-list__text">Приложение</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__container">
+          <a href="./index.html" class="footer__logo-web"
+            >Web<span class="footer__logo">Studio</span></a
+          >
+          <address class="footer__address">г. Киев, пр-т Леси Украинки, 26</address>
+          <a href="mailto:info@devstudio.com" class="footer__link">info@devstudio.com</a>
+          <div>
+            <a href="tel:+380961111111" class="footer__link footer__link-phone"
+              >+38 096 111 11 11</a
+            >
+          </div>
+        </div>
+        <div class="conect">
+          <div class="conect__social">
+            <h3 class="conect__title">присоединяйтесь</h3>
+            <ul class="conect-social__list list">
+              <li class="conect-social__item">
+                <a class="conect-social__link" href="">
+                  <svg class="conect-social__icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="conect-social__item">
+                <a class="conect-social__link" href="">
+                  <svg class="conect-social__icon">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="conect-social__item">
+                <a class="conect-social__link" href="">
+                  <svg class="conect-social__icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="conect-social__item">
+                <a class="conect-social__link" href="">
+                  <svg class="conect-social__icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mailing">
+          <h3 class="mailing__title">Подпишитесь на рассылку</h3>
+          <form class="form">
+            <label for="email"></label>
+            <input type="email" name="email" id="email" placeholder="E-mail" class="form__label" />
+            <button type="submit" class="form__button">
+              Подписаться
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-send" class="form__icon"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
