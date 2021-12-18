@@ -38,12 +38,36 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
-  /* outline: 2px solid red; */
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    min-width: 320px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    min-width: 480px;
+    min-height: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    min-width: 1200px;
+  }
 }
 
 .section {
@@ -192,9 +216,7 @@ body {
 }
 
 .hero {
-  height: 600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  width: 100%;
   background-color: var(header-background-color);
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
@@ -203,25 +225,65 @@ body {
   background-size: cover;
 }
 
+@media screen and (min-width: 320px) {
+  .hero {
+    min-width: 320px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    min-width: 480px;
+    min-height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    min-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    min-width: 1200px;
+    min-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
 .hero__title {
-  margin: 0;
   padding: 0;
-  margin-left: 237px;
+  margin: auto;
   margin-bottom: 30px;
-  max-width: 696px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  max-width: 360px;
+  font-size: 26px;
+  line-height: 1.62;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primery-background-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
 .hero__button {
   min-height: 50px;
   min-width: 200px;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 16px;
   line-height: 1.87;
   -webkit-box-align: center;
