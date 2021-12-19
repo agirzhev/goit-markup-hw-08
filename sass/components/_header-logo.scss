@@ -2,21 +2,51 @@
   /* margin-right: 93px; */
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
   text-decoration: none;
+
+  @media screen and (min-width: 320px) {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .header__logo-web {
-  padding-top: 25px;
-  padding-bottom: 25px;
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   text-decoration: none;
+
+  @media screen and (min-width: 320px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    min-width: 134px;
+    min-height: 28px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }
