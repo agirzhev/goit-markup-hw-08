@@ -87,3 +87,47 @@
 .header-portfolio {
   border-bottom: 1px solid var(--line-fist-color);
 }
+
+.header__mobile {
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  fill: currentColor;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: var(--secondary-text-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.header__mobile-link {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  fill: currentColor;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: var(--secondary-text-color);
+  }
+}
+
+.header__mobile-icon {
+  width: 24px;
+  height: 16px;
+  margin-top: 10px;
+  fill: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: var(--secondary-text-color);
+  }
+}

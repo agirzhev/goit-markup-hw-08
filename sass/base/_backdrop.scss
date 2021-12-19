@@ -32,6 +32,10 @@
   }
 }
 
+.modal-mobile {
+  min-height: 796px;
+}
+
 .is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -61,6 +65,26 @@
   &:hover,
   &:focus {
     background-color: var(--secondary-text-color);
+  }
+}
+
+.modal-close-mobile {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: var(--secondary-text-color);
   }
 }
 
