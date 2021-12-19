@@ -1554,19 +1554,39 @@ body {
 }
 
 .modal {
+  padding: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 528px;
-  min-height: 581px;
   background-color: var(--primery-background-color);
   border-radius: 5px;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 320px) {
+  .modal {
+    width: 290px;
+    min-height: 609px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    min-height: 488px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .is-hidden {
@@ -1628,14 +1648,24 @@ body {
   padding: 0;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
 }
 
+@media screen and (min-width: 320px) {
+  .order__tirle {
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .order__tirle {
+    line-height: 1.15;
+  }
+}
+
 .inputs {
-  width: 448px;
   height: 342px;
 }
 
@@ -1647,14 +1677,49 @@ body {
   height: 138px;
 }
 
+@media screen and (min-width: 320px) {
+  .inputs {
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .inputs {
+    width: 370px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .inputs {
+    width: 448px;
+  }
+}
+
 .input__box {
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
-  width: 448px;
   height: 58px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 320px) {
+  .input__box {
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .input__box {
+    width: 370px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .input__box {
+    width: 448px;
+  }
 }
 
 .input__box:last-child {
@@ -1712,21 +1777,40 @@ body {
 }
 
 .check-box {
-  width: 435px;
   height: 25px;
   margin: 0;
   padding: 0;
   margin-top: 20px;
   margin-bottom: 30px;
-  margin-left: 12px;
   -webkit-transition: cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* outline: 1px solid tomato; */
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--link-text-color);
+}
+
+@media screen and (min-width: 320px) {
+  .check-box {
+    min-width: 210px;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .check-box {
+    width: 370px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .check-box {
+    width: 435px;
+    font-size: 14px;
+    line-height: 1.71;
+    margin-left: 12px;
+  }
 }
 
 .check-box__input {
@@ -1781,16 +1865,32 @@ body {
 
 .label-icon {
   position: absolute;
-  margin-left: -436px;
   margin-top: 11px;
   -webkit-transform: scaleX(100%);
           transform: scaleX(100%);
   fill: currentColor;
 }
 
+@media screen and (min-width: 320px) {
+  .label-icon {
+    margin-left: -198px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .label-icon {
+    margin-left: -358px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .label-icon {
+    margin-left: -436px;
+  }
+}
+
 .button-check {
   margin: 0;
-  margin-left: 124px;
   width: 200px;
   height: 50px;
   border: none;
@@ -1798,5 +1898,23 @@ body {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 320px) {
+  .button-check {
+    margin-left: 5px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .button-check {
+    margin-left: 85px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button-check {
+    margin-left: 124px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
