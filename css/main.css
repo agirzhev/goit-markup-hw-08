@@ -186,7 +186,6 @@ body {
 }
 
 .header__logo {
-  /* margin-right: 93px; */
   font-family: Raleway;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -971,7 +970,6 @@ body {
 .footer__container {
   margin: 0;
   padding: 0;
-  /* height: 31px; */
 }
 
 @media screen and (min-width: 768px) {
