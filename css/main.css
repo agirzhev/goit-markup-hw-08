@@ -828,28 +828,65 @@ body {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background-color: var(--header-background-color);
 }
 
-.footer .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 320px) {
+  .footer {
+    min-height: 603px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    min-height: 463px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    min-height: 252px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .footer__container {
   margin: 0;
   padding: 0;
-  width: 231px;
   /* height: 31px; */
-  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__container {
+    width: 232px;
+    margin-left: 76px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    margin: 0;
+    text-align: left;
+    width: 231px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__container-tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .footer__address {
-  width: 231px;
   height: 30px;
   margin-top: 20px;
   font-style: normal;
@@ -858,6 +895,12 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primery-background-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__address {
+    width: 231px;
+  }
 }
 
 .footer__link {
@@ -894,10 +937,29 @@ body {
 .conect {
   margin: 0;
   padding: 0;
-  margin-left: 70px;
-  margin-top: 12px;
-  width: 206px;
   height: 80px;
+  display: inline-block;
+}
+
+@media screen and (min-width: 320px) {
+  .conect {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .conect {
+    margin-top: 5px;
+    margin-left: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .conect {
+    margin-left: 70px;
+    width: 206px;
+    margin-top: 12px;
+  }
 }
 
 .conect__title {
@@ -913,6 +975,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primery-background-color);
+  display: inline-block;
 }
 
 .conect__social {
@@ -978,16 +1041,42 @@ body {
 .mailing {
   margin: 0;
   padding: 0;
-  margin-top: 12px;
-  margin-left: 93px;
-  width: 570px;
   height: 86px;
-  text-align: left;
+}
+
+@media screen and (min-width: 320px) {
+  .mailing {
+    margin-top: 60px;
+    min-width: 290px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .mailing {
+    min-width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mailing {
+    min-height: 156px;
+    min-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mailing {
+    margin-top: 12px;
+    min-width: 570px;
+    margin-left: 93px;
+    text-align: left;
+  }
 }
 
 .mailing__title {
   padding: 0;
   margin: 0;
+  display: inline-block;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -1001,11 +1090,34 @@ body {
   margin-top: 20px;
 }
 
+@media screen and (min-width: 320px) {
+  .form {
+    min-width: 290px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .form {
+    min-width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    min-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form {
+    min-width: 358px;
+  }
+}
+
 .form__label {
   margin: 0;
   padding: 0;
   padding-left: 16px;
-  width: 358px;
   height: 50px;
   color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1013,12 +1125,30 @@ body {
   background-color: var(--header-background-color);
 }
 
+@media screen and (min-width: 320px) {
+  .form__label {
+    min-width: 290px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .form__label {
+    min-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form__label {
+    min-width: 358px;
+  }
+}
+
 .form__button {
   margin: 0;
   padding: 0;
-  margin-left: 12px;
   width: 196px;
   height: 50px;
+  display: block;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -1034,6 +1164,32 @@ body {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 320px) {
+  .form__button {
+    margin-left: 47px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .form__button {
+    margin-left: 112px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form__button {
+    margin-left: 271px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form__button {
+    display: inline-block;
+    margin-left: 12px;
+  }
 }
 
 .form__icon {
