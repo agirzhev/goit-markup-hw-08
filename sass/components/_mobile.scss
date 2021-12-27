@@ -6,6 +6,27 @@
 
 .mobile-tel__list,
 .soocial__list {
-  padding-left: 40px;
+  //padding-left: 40px;
   text-align: left;
+}
+
+.modal-mobile__container {
+  position: fixed;
+  background-color: #ffffff;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.mobile-bottom {
+  margin-top: auto;
+}
+.mobile-top {
+  width: 100%;
 }

@@ -1841,8 +1841,35 @@ body {
 
 .mobile-tel__list,
 .soocial__list {
-  padding-left: 40px;
   text-align: left;
+}
+
+.modal-mobile__container {
+  position: fixed;
+  background-color: #ffffff;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+}
+
+.modal-mobile__container .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mobile-bottom {
+  margin-top: auto;
+}
+
+.mobile-top {
+  width: 100%;
 }
 
 .modal__form {
@@ -2104,6 +2131,7 @@ body {
   width: 200px;
   height: 50px;
   border: none;
+  color: #ffffff;
   background: var(--secondary-text-color);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
