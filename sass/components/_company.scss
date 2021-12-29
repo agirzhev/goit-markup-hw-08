@@ -1,30 +1,33 @@
 .company {
-  padding-bottom: 0;
+  //padding-bottom: 0;
 
   @media screen and (min-width: 320px) {
     padding-top: 60px;
+    padding-bottom: 0;
+    min-width: 290px;
+    min-height: 1114px;
   }
+  @media screen and (min-width: 480px) {
+    min-width: 450px;
+  }
+
   @media screen and (min-width: 768px) {
-    padding-top: 60px;
+    min-width: 768px;
+    min-height: 627px;
   }
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
+    min-width: 1170px;
+    min-height: 251px;
+    //padding-bottom: 94px;
   }
 }
 
 .company-list {
   margin-left: -30px;
-  @media screen and (min-width: 320px) {
-    min-width: 290px;
-    min-height: 994px;
-  }
-  @media screen and (min-width: 480px) {
-    min-width: 450px;
-    min-height: 994px;
-  }
+  margin-bottom: -30px;
+
   @media screen and (min-width: 768px) {
-    min-width: 738px;
-    min-height: 507px;
     display: flex;
     flex-wrap: wrap;
     text-align: left;
@@ -42,7 +45,7 @@
 
   @media screen and (min-width: 768px) {
     width: 354px;
-    height: 251px;
+    //height: 251px;
   }
 
   @media screen and (min-width: 1200px) {
